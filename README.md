@@ -2,10 +2,10 @@
 
 > Extract any **public** Spotify playlist into clean JSON, then let an AI judge your taste with a doodle-style page you can screenshot and share. Bilingual EN / 中.
 
-🌐 **Live demo →** [Life Sucks — A Verdict (生活很烂 — 一份裁决)](https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html)
+🌐 **Live demo →** [Life Sucks — A Verdict (生活很烂 — 一份裁决)](https://soujiokita98.github.io/spotify-roast-skill/examples/life-sucks/judgment.html)
 
 <p align="center">
-  <a href="https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html">
+  <a href="https://soujiokita98.github.io/spotify-roast-skill/examples/life-sucks/judgment.html">
     <img src="./examples/life-sucks/preview.png" alt="Preview of the Life Sucks playlist judgment page" width="640">
   </a>
 </p>
@@ -24,7 +24,7 @@ Once you have the JSON, the fun starts.
 
 ## What you can do with it
 
-1. **🔥 Roast a playlist.** Generate a doodle-style judgment page (verdict, taxonomy, picks, roast paragraphs, emotional arc) that's screenshot-friendly and exports to PNG with one click. Bilingual toggle for EN/中. See the [live demo](https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html).
+1. **🔥 Roast a playlist.** Generate a doodle-style judgment page (verdict, taxonomy, picks, roast paragraphs, emotional arc) that's screenshot-friendly and exports to PNG with one click. Bilingual toggle for EN/中. See the [live demo](https://soujiokita98.github.io/spotify-roast-skill/examples/life-sucks/judgment.html).
 2. **🤖 Give your AI your music taste.** Drop the JSON into Claude / ChatGPT / your assistant of choice. Now it actually knows what you listen to and can have real conversations about it instead of guessing from your description.
 3. **🎬 Pick songs for a video / vlog.** Describe the vibe ("sunset driving, melancholy") and ask your AI to pull matches from your real library, not from its imagination.
 4. **🔍 Audit a playlist.** Find duplicates, count languages, see decade distribution, compare two playlists, find the album outliers — all things your AI can do once it has the JSON.
@@ -32,8 +32,8 @@ Once you have the JSON, the fun starts.
 ## Quick start
 
 ```bash
-git clone https://github.com/SoujiOkita98/spotify-playlist-roast.git
-cd spotify-playlist-roast
+git clone https://github.com/SoujiOkita98/spotify-roast-skill.git
+cd spotify-roast-skill
 pip install requests
 
 python3 scripts/extract_spotify_playlist.py \
@@ -101,7 +101,7 @@ The bearer token is what makes this work without OAuth. It's anonymous, ephemera
 ## Project structure
 
 ```
-spotify-playlist-roast/
+spotify-roast-skill/
 ├── README.md              # this file
 ├── README.zh.md           # Chinese version
 ├── LICENSE                # MIT

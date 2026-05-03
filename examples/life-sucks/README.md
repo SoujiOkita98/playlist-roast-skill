@@ -6,7 +6,7 @@ Files:
 - [`playlist.json`](./playlist.json) — full extraction output
 - [`judgment.html`](./judgment.html) — the AI-generated judgment page (bilingual EN/中, exports to PNG)
 
-🌐 **Live:** https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html
+🌐 **Live:** https://soujiokita98.github.io/spotify-roast-skill/examples/life-sucks/judgment.html
 
 ## How this example was generated
 

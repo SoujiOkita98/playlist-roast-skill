@@ -16,9 +16,10 @@ env/
 .mypy_cache/
 .ruff_cache/
 
-# Editor
+# Editor / agent state
 .vscode/
 .idea/
+.omc/
 *.swp
 *.swo
 *~

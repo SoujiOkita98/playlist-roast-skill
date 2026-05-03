@@ -1,5 +1,5 @@
 ---
-name: spotify-playlist-roast
+name: spotify-roast-skill
 description: Extract any public Spotify playlist into JSON, CSV, or text without OAuth — then optionally generate a doodle-style "AI judgment" HTML page (bilingual EN/中, screenshot-friendly, exports to PNG via html2canvas). Use when the user gives an open.spotify.com playlist URL and asks to extract / list / export tracks, judge or roast a playlist, build a shareable verdict page, or feed playlist data to an AI for music-taste analysis.
 ---
 
