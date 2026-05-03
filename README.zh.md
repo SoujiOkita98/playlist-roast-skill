@@ -4,13 +4,21 @@
 
 🌐 **在线 Demo →** [Life Sucks — 一份 AI 裁决](https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html)
 
+<p align="center">
+  <a href="https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html">
+    <img src="./examples/life-sucks/preview.png" alt="Life Sucks 歌单裁决页面预览" width="640">
+  </a>
+</p>
+
 English version: [README.md](./README.md)。
 
 ---
 
 ## 这玩意儿为什么存在
 
-Spotify 什么 API 都有，但都要 OAuth。如果只是「我就想拿歌单里的歌名」这种轻量需求，OAuth 是大炮打蚊子。这个 skill 的做法是：抓 Spotify 公开 embed 页面里的匿名 token，再用它分页调官方 API。**不用登录，不用注册 app，不用 client secret。** 任何公开歌单都能用。
+我最开始是在剪旅行 vlog 的时候做了这个。那时我想问 AI 一个很简单的问题：*我真实歌单里的哪些歌适合这个镜头？* 但在问之前，我需要先把歌单变成 AI 能读懂的上下文。
+
+Spotify 有官方 API，但基本都要 OAuth 和 app 配置。如果只是「我就想拿歌单里的歌名」这种轻量需求，OAuth 是大炮打蚊子。这个 skill 的做法是：抓 Spotify 公开 embed 页面里的匿名 token，再用它分页调官方 API。**不用登录，不用注册 app，不用 client secret。** 任何公开歌单都能用。
 
 拿到 JSON 之后，事情就有意思了。
 
@@ -105,6 +113,7 @@ spotify-playlist-roast/
 └── examples/
     └── life-sucks/
         ├── playlist.json
+        ├── preview.png    # README 里的截图预览
         └── judgment.html  # 在线 demo（双语 + 一键 PNG 导出）
 ```
 

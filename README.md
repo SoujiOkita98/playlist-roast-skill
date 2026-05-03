@@ -4,13 +4,21 @@
 
 🌐 **Live demo →** [Life Sucks — A Verdict (生活很烂 — 一份裁决)](https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html)
 
+<p align="center">
+  <a href="https://soujiokita98.github.io/spotify-playlist-roast/examples/life-sucks/judgment.html">
+    <img src="./examples/life-sucks/preview.png" alt="Preview of the Life Sucks playlist judgment page" width="640">
+  </a>
+</p>
+
 Read this in [中文](./README.zh.md).
 
 ---
 
 ## Why this exists
 
-Spotify has APIs for everything, but they all want OAuth. For a lightweight "I just want the song names" use case, that's overkill. This skill scrapes the public embed page for an anonymous token and uses it to page through the official API. **No login, no app registration, no client secret.** Works for any public playlist.
+I made this while editing a travel vlog. I wanted to ask an AI a simple question: *which songs from my actual playlist fit this scene?* But first I needed a lightweight way to give the AI my playlist as context.
+
+Spotify has official APIs, but they all want OAuth and app setup. For a lightweight "I just want the song names" use case, that's overkill. This skill scrapes the public embed page for an anonymous token and uses it to page through the official API. **No login, no app registration, no client secret.** Works for any public playlist.
 
 Once you have the JSON, the fun starts.
 
@@ -105,6 +113,7 @@ spotify-playlist-roast/
 └── examples/
     └── life-sucks/
         ├── playlist.json
+        ├── preview.png    # screenshot preview for the README
         └── judgment.html  # the live demo (bilingual, exports to PNG)
 ```
 
